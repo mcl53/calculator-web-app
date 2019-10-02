@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" type="text/css">
+    <title>Calculator</title>
+    <link rel="icon" href="{{  url_for('static', filename='favicon.ico')  }}" type="image/x-icon">
+</head>
+
+<body>
+    <div class="app col-xl-3 col-lg-4 col-med-5 col-sm-6 col-9 container px-0">
+        <div id="screen" class="container">
+            <span id="operator"></span>
+            <span id="negative">-</span>
+            <span id="number">0</span>
+            <span id="exponent"></span>
+        </div>
+        <div id="button" class="container">
+            <span id="operators" class="buttons row">
+                <button class="col btn-danger oper" id="plus">+</button>
+                <button class="col btn-danger oper" id="minus">-</button>
+                <button class="col btn-danger oper" id="multiply">x</button>
+                <button class="col btn-danger oper" id="divide">÷</button>
+            </span>
+            <span id="high" class="buttons row">
+                <button class="col btn-danger num" id="seven">7</button>
+                <button class="col btn-danger num" id="eight">8</button>
+                <button class="col btn-danger num" id="nine">9</button>
+            </span>
+            <span id="medium" class="buttons row">
+                <button class="col btn-danger num" id="four">4</button>
+                <button class="col btn-danger num" id="five">5</button>
+                <button class="col btn-danger num" id="six">6</button>
+            </span>
+            <span id="low" class="buttons row">
+                <button class="col btn-danger num" id="one">1</button>
+                <button class="col btn-danger num" id="two">2</button>
+                <button class="col btn-danger num" id="three">3</button>
+            </span>
+            <span id="clear" class="buttons row">
+                <button class="col btn-danger num" id="zero">0</button>
+                <button class="col btn-danger num" id="decimal">.</button>
+                <button class="col btn-danger" id="clr">C</button>
+            </span>
+            <span id="equate" class="buttons row">
+                <button class="col btn-danger" id="equals">=</button>
+            </span>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

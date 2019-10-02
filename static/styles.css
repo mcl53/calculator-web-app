@@ -1,0 +1,119 @@
+body{
+    background-color: #5457ff;
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-danger{
+    cursor: default;
+    padding: 4px;
+    margin: 2px;
+    font-size: 15px;
+}
+
+.btn-danger:focus{
+    outline: none;
+}
+
+.app{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+}
+
+.buttons{
+    display: flex;              /* establish flex container */
+    flex-direction: row;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;
+    width: 100%;
+    padding: 7px;
+}
+
+#screen{
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 46px;
+    margin-top: 125px;
+    height: 110px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-top: 11px;
+}
+
+
+#button{
+    display: flex;              /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+    border: solid black;
+    height: 350px;
+}
+
+#operators button{
+    width: 69px;
+    border-radius: 25px;
+}
+
+#high button{
+    width: 92px;
+    border-radius: 25px;
+}
+
+#medium button{
+    width: 92px;
+    border-radius: 25px;
+}
+
+#low button{
+    width: 92px;
+    border-radius: 25px;
+}
+
+#clear button{
+    width: 92px;
+    border-radius: 25px;
+}
+
+#equals{
+    border-radius: 50px;
+}
+
+#operator{
+    position: relative;
+    float: left;
+    width: 5%;
+    height: 100%;
+    text-align: center;
+    color: #87f2af;
+    font-size: 28px;
+    padding-top: 21px;
+}
+
+#number{
+    vertical-align: middle;
+    height: 100%;
+    margin-right: 0px;
+}
+
+#exponent{
+    position: relative;
+    float: right;
+    width: 14%;
+    height: 100%;
+    font-size: 22px;
+    padding-top: 34px;
+    margin-right: 7px;
+    text-align: left;
+}
+
+#negative{
+    position: relative;
+    font-size: 28px;
+    margin: -10px;
+    display: none;
+}
